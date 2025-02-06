@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री संत गजानन महाराज प्रकट दिन सोहळा</title>
+    <link rel="shortcut icon" href="/images/download (1).jpeg">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background: url('/images/img.jpg') no-repeat center center fixed;
+            background-size: 100% 100%;
+            color: #222;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 5s forwards;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 50px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+        }
+
+
+
+
+
+
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: url('/header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            /* Ensure full coverage */
+            height: 70px;
+            /* Adjust as needed */
+            width: 100%;
+            position: fixed;
+            /* Keeps it on top */
+            top: 0;
+            left: 0;
+            z-index: 2000;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: white;
+
+            font-size: 100px;
+            font-weight: bold;
+
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        .nav-links li {
+            display: inline-block;
+            /* Make the nav items inline */
+            text-align: center;
+            border: 2px solid #0d2197;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.5s;
+        }
+
+        .nav-links li:hover {
+            background: rgba(212, 25, 25, 0.2);
+            box-shadow: 0 5px 15px rgba(11, 6, 6, 0.2);
+            transform: scale(1.05);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #040108;
+            font-weight: bolder;
+            padding: 5px 10px;
+            display: block;
+            transition: color 0.3s;
+            font-size: 15px;
+            /* Increase font size for better readability */
+        }
+
+        .nav-links a:hover {
+            color: #03182e;
+        }
+
+        main {
+            background: url('/main-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            /* Ensure full viewport coverage */
+            padding-top: 100px;
+            /* Space for the fixed header */
+            text-align: center;
+        }
+
+
+        /* Main Content */
+        h1,
+        h3,
+        h4 {
+            color: #06090d;
+            margin: 10px 0;
+        }
+
+        /* Blurring Effect */
+        pre,
+        section {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            /* Ensures that content and blur don't overflow */
+        }
+
+        pre::before,
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5);
+            /* Semi-transparent overlay */
+            backdrop-filter: blur(5px);
+            /* Apply blur */
+            z-index: -1;
+            /* Ensure overlay stays behind the content */
+        }
+/* hjgkjgj */
+        pre {
+            background-color: #fff;
+            background-color: aqua;
+            background: url('/images/img.jpg') no-repeat center center fixed;
+            background-size: 100% 100%;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            border-right: 4px solid #007bff;
+            border-bottom: 2px solid #007bff;
+            border-top: 2px solid #007bff;
+            border-radius: 19px;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Sections */
+        section {
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #7a1edb;
+            background: url('/images/img.jpg') no-repeat center center fixed;
+            background-size: 100% 100%;
+            border-radius: 9px;
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 80%;
+            display: inline-block;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.1s;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        section a {
+            text-decoration: none;
+            color: #d35400;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+
+        section a:hover {
+            color: #e74c3c;
+        }
+
+        h1 {
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #dee1e4;
+            background: url('/images/img.jpg') no-repeat center center fixed;
+            background-size: 100% 100%;
+            color: #150303;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        /* Styling for anchor around sections */
+        section a {
+            display: block;
+            height: 10%;
+        }
+
+        .top-button {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            background: #2196F3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let sections = document.querySelectorAll("section");
+            let observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("reveal");
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            document.querySelectorAll("pre").forEach(pre => {
+                pre.style.background = "blur";
+            });
+
+            document.querySelectorAll("section").forEach(section => {
+                section.style.background = "transparent";
+            });
+
+
+        });
+
+
+
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (event) {
+                // Check if the link is pointing to a section on the same page
+                let target = this.getAttribute('href');
+
+                if (target.startsWith('#')) {
+                    // Prevent default behavior for internal links (scrolling)
+                    event.preventDefault();
+
+                    // Scroll to the section
+                    let section = document.querySelector(target);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#a">भजन सेवा</a></li>
+                <li><a href="#b">किर्तन सेवा</a></li>
+                <li><a href="#c">महाप्रसाद</a></li>
+                <li><a href="#d">मिरवणूक सोहळा</a></li>
+                <li><a href="#e">भक्ती</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <marquee behavior="scroll" direction="left">🚩!! श्रींचा प्रकट दिन सोहळा २०२५!! 🚩</marquee>
+    <button onclick="window.scrollTo(0,0)" class="top-button">🔝 वर जा</button>
+
+
+    <main>
+
+        <h4>।। श्री संत गजानन महाराज प्रसन्न ।।</h4>
+        <h1><i>श्री संत गजानन महाराज संस्थान मांगलादेवी </i></h1>
+        <h3> ता. नेर जि. यवतमाळ</h3>
+        <h2>श्रींचा प्रकट दिन सोहळा</h2>
+
+        <pre><b>गुरुवार दि. १३/२/२०२५ ते गुरुवार दि. २०/२/२०२५
+गुरुवार दि. १३/०२/२०२५ कलश स्थापना श्री मुरलीधर पंत जोशी यांचे हस्ते 
+* श्री चा अभिषेक
+* दररोज रात्री ७ वाजता : हरीपाठ विठ्ठल रुक्मीनी हरिपाठ मंडळ, मांगलादेवी</b>
+</pre>
+
+        <pre><b>गुरुवार दि. २०/०२/२०२५ सकाळी ५ वाजता होमहवन
+सकाळी १०.३० वाजता काल्याचे किर्तन ह.भ.प.भागवताचार्य योगेश महाराज खवले शेगावकर
+साथसंगत : विठ्ठल रुक्मीनी वारकरी भजन मंडळ, मांगलादेवी
+!!गण गण गणात बोते!!</b>
+</pre>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+
+        <section id="a" class="a">
+            <a href="a.html">
+                <h3>भजन सेवा</h3>
+            </a>
+        </section>
+
+        <section id="b" class="b">
+            <a href="b.html">
+                <h3>किर्तन सेवा</h3>
+            </a>
+        </section>
+
+        <section id="c" class="c">
+            <a href="c.html">
+                <h3>महाप्रसाद</h3>
+            </a>
+        </section>
+
+        <section id="d" class="d">
+            <a href="d.html">
+                <h3>मिरवणूक सोहळा</h3>
+            </a>
+        </section>
+
+        <section id="e" class="e">
+            <a href="e.html">
+                <h3>भक्ती</h3>
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright &copy; All rights reserved by <br>
+        Shree Sant Gajanan Maharaj Sansthan Mangladevi Tq.Ner(P.),Dist.Yavatmal
+    </footer>
+
+</body>
+
+</html>

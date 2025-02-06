@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>महाप्रसाद</title>
+    <link rel="shortcut icon" href="/images/download (1).jpeg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('/images/temp2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #e0d1d1;
+            color: #444;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        h1 {
+            color: #231814;
+
+
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 2px 2px 10px rgba(216, 67, 21, 0.2);
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #171518;
+
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            font-size: 2em;
+        }
+
+        /* Centering the content */
+        #prasadSection {
+            text-align: center;
+            margin-top: 20px;
+        }
+      
+
+       h3 {
+            color: #010d02;
+            font-size: 1.7em;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        h4 {
+            color: #030e1a;
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: normal;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            background-color: aqua;
+            background: url('/images/asdfg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 10px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 3.2em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            h3 {
+                font-size: 2.2em;
+            }
+
+            h4 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+    <marquee behavior="scroll" direction="left">🚩!! श्रींचा प्रकट दिन सोहळा २०२५!! 🚩</marquee>
+</head>
+
+<body>
+    <h1>महाप्रसाद</h1>
+    <br>
+    <h2>ठिक १ वाजता</h2>
+    <h3>महाप्रसाद पंगती करीता पाण्याची अ‍ॅक्वा व्यवस्था</h3>
+    <br>
+    <h4>श्री. विनोदराव कुर्जेकर कडून पुरविण्यात येईल</h4>
+    <br>
+    <pre><h3>स्थळ: श्री संत गजानन महाराज संस्थान मांगलादेवी
+  ता. नेर जि. यवतमाळ</h3></pre>
+
+
+   
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll("h1, h2, h3, h4, h5");
+
+            function revealOnScroll() {
+                elements.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50) {
+                        element.style.opacity = 1;
+                        element.style.transform = "translateY(0)";
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", revealOnScroll);
+            revealOnScroll(); // Run on page load
+        });
+
+        function getPrasad() {
+            let blessings = ["महाराज तुम्हाला सुख-समृद्धी देवोत!", "तुमच्या जीवनात आनंद आणि शांती नांदो!"];
+            document.getElementById("prasadOutput").innerText = blessings[Math.floor(Math.random() * blessings.length)];
+        }
+
+    </script>
+</body>
+
+</html>

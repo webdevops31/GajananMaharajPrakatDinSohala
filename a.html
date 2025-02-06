@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भजन सेवा</title>
+    <link rel="shortcut icon" href="/images/download (1).jpeg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('/images/temp2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #444;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00796b;
+            background-color: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 2px 2px 10px rgba(0, 121, 107, 0.2);
+            font-size: 2em;
+            opacity: 0;
+        }
+
+        table {
+            width: 85%;
+            margin: 100px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #b2dfdb;
+            color: #004d40;
+            font-size: 1.2em;
+        }
+
+        td {
+            font-size: 1.1em;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f8e9;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 50px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+        }
+
+        tr:hover {
+            background-color: #e3f2fd;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 121, 107, 0.5);
+        }
+    </style>
+    <marquee behavior="scroll" direction="left">🚩!! श्रींचा प्रकट दिन सोहळा २०२५!! 🚩</marquee>
+</head>
+
+<body>
+    <h2 id="title">भजन सेवा कार्यक्रम</h2>
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>वार</th>
+                <th> दिनांक</th>
+                <th>भजन मंडळ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>गुरूवार</td>
+                <td>दि. १३/०२/२०२५ रात्री ९ वा.</td>
+                <td>लक्ष्मी महिला मंडळ, पाथ्रड (गोळे)</td>
+            </tr>
+            <tr>
+                <td>शुक्रवार</td>
+                <td>दि. १४/०२/२०२५ रात्री ९ वा.</td>
+                <td>बाल गजानन भजन मंडळ, मांगलादेवी</td>
+            </tr>
+            <tr>
+                <td>शनिवार</td>
+                <td>दि. १५/०२/२०२५ रात्री ९ वा.</td>
+                <td>लक्ष्मी महिला व मंजुळा महिला भजन मांगलादेवी</td>
+            </tr>
+            <tr>
+                <td>रविवार</td>
+                <td>दि. १६/०२/२०२५ रात्री ९ वा.</td>
+                <td>श्री गजानन गुरुदेव भजन मंडळ मांगलादेवी</td>
+            </tr>
+            <tr>
+                <td>सोमवार</td>
+                <td>दि. १७/०२/२०२५ रात्री ९ वा.</td>
+                <td>सार्वत्रिक अवधुती भजन मंडळ मांगलादेवी</td>
+            </tr>
+            <tr>
+                <td>मंगळवार</td>
+                <td>दि. १८/०२/२०२५ रात्री ९ वा.</td>
+                <td>युवा सटवाजी खंजेरी भजन मंडळ, मांगलादेवी</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Animate title
+        gsap.to("#title", { duration: 1, opacity: 1, y: -20, ease: "power2.out" });
+
+        // Animate table
+        gsap.to("#scheduleTable", { duration: 1.5, opacity: 1, y: -30, ease: "power2.out", delay: 0.5 });
+    </script>
+</body>
+
+</html>

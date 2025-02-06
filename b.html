@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>किर्तन सेवा</title>
+    <link rel="shortcut icon" href="/images/download (1).jpeg">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('/images/temp2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+            color: #0e0000;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden;
+            transition: background-position 0.5s ease-out;
+        }
+
+        /* Heading Animations */
+        h2,
+        h3,
+        h4 {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        /* Glow Effect on Hover */
+        h2:hover,
+        h3:hover,
+        h4:hover {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+        /* Box Styling */
+        .box {
+            background-color: #f4e0e0;
+            background: url('/images/asdfg.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+            margin: 20px auto;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        /* Floating Animation */
+        .float {
+            animation: float 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Horizontal Line Styling */
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+            margin: 30px auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .box {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                padding: 12px 18px;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            h4 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+    <marquee behavior="scroll" direction="left">🚩!! श्रींचा प्रकट दिन सोहळा २०२५!! 🚩</marquee>
+</head>
+
+<body>
+
+    <div class="box float">
+        <h2>बुधवार दि. १९/०२/२०२५ रात्री ९ वा. ह.भ.प. भागवताचार्य योगेश महाराज खवले शेगावकर</h2>
+        <h3>साथसंगत : श्री गजानन गुरुदेव भजन मंडळ, मांगलादेवी</h3>
+        <h4>सौजन्य : स्व. मनोहरराव विश्वनाथ कुंभारखाने स्मृती प्रित्यर्थ श्री. विनोदभाऊ मनोहरराव कुंभारखाने कडून,
+            श्री.रामचंद्रजी महले (विमा एजेन्ट ),श्री. संजय हरिदासजी खवले यांचे कडून
+        </h4>
+        <hr>
+    </div>
+
+    <div class="box float">
+        <h2>गुरुवार दि. २०/०२/२०२५ सकाळी १०.३० वाजता काल्याचे किर्तन ह. भ.प.भागवताचार्य योगेश महाराज खवले शेगावकर</h2>
+        <h3>साथसंगत : विठ्ठल रुक्मीनी वारकरी भजन मंडळ, मांगलादेवी</h3>
+        <h4>सौजन्य : स्व. श्रावण डोमजी फोपसे यांचे स्मृती प्रित्यर्थ श्री. संदीपभाऊ श्रावणजी फोपसे, मांगलादेवी
+            स्व. सुनिताताई सुधाकर तायवाडे यांचे स्मृती प्रित्यर्थ श्री. सुधाकरराव तायवाडे यांचे कडून
+            स्व. महादेवराव इंगळे स्मृती प्रित्यर्थ श्री. रामपालजी इंगळे मांगलादेवी यांचे कडून</h4>
+        <hr>
+    </div>
+
+    <div class="box float">
+        <h2>गुरुवार दि. २०/०२/२०२५ रात्री ९ वाजता ह.भ.प. ज्ञानेश्वर महाराज काळपांडे, अमरावती (विनोदी किर्तनकार)</h2>
+        <h3>साथसंगत : श्री गजानन भजन मंडळ, मांगलादेवी </h3>
+        <h4>स्व. धनपालजी चोपकर स्मृती प्रित्यर्थ श्री. प्रल्हादराव चोपकर, श्री. रामचंद्रजी परोपटे यांचे कडून</h4>
+    </div>
+
+    <script>
+        // Reveal animations for headings
+        document.addEventListener("DOMContentLoaded", function () {
+            let elements = document.querySelectorAll("h2, h3, h4, .box, hr");
+            let delay = 200;
+
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = "1";
+                    el.style.transform = "translateY(0) scale(1)";
+                }, delay * index);
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener("scroll", function () {
+            let scrollPosition = window.scrollY;
+            document.body.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+        });
+
+        document.querySelectorAll("pre").forEach(pre => {
+            pre.style.background = "transparent";
+            pre.style.backdropFilter = "blur(5px)";
+        });
+    </script>
+
+</body>
+
+</html>

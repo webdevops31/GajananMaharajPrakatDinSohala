@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मिरवणूक सोहळा</title>
+    <link rel="shortcut icon" href="/images/download (1).jpeg">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('/images/temp2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+            color: #0f0101;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Title Animation */
+        h1,
+        h2,
+        h4 {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        /* Glowing Hover Effect */
+        h1:hover,
+        h2:hover {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+            transform: scale(1.05);
+            transition: text-shadow 0.4s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        /* Wave Animation for Pre */
+        pre {
+            background-color: #c8dccc;
+            background: url('/images/temp2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            animation: wave 3s infinite linear alternate;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Floating Effect for Content */
+        .float {
+            animation: float 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+        }
+    </style>
+    <marquee behavior="scroll" direction="left">🚩!! श्रींचा प्रकट दिन सोहळा २०२५!! 🚩</marquee>
+</head>
+
+<body>
+
+    <h2>शुक्रवार दि. २१/०२/२०२५ सकाळी १० वाजता</h2>
+    <h1 class="float">🚩 श्रीं ची मिरवणुक 🚩</h1>
+
+    <pre>
+    <h2>* श्री हनुमान वारकरी भजन मंडळ, भारतवाडी ता. तिवसा, 
+* श्रीराम महिला वारकरी भजन मंडळ, मंगरूळ चव्हाळा 
+* लक्ष्मी महिला भजन मंडळ, येवती
+* नवरत्न महिला भजन मंडळ, मांगलादेवी 
+* अंबिका भजन मंडळ, मांगलादेवी</h2>
+    </pre>
+
+    <script>
+        // Reveal Animations
+        document.addEventListener("DOMContentLoaded", function () {
+            let elements = document.querySelectorAll("h1, h2, h4");
+            let delay = 300;
+
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = "1";
+                    el.style.transform = "translateY(0)";
+                }, delay * index);
+            });
+        });
+
+        // Parallax Background Effect
+        window.addEventListener("scroll", function () {
+            let scrollY = window.scrollY;
+            document.body.style.backgroundPositionY = scrollY * 0.5 + "px";
+
+
+        });
+
+        document.querySelectorAll("pre").forEach(pre => {
+            pre.style.background = "transparent";
+            pre.style.backdropFilter = "blur(5px)";
+        });
+    </script>
+
+</body>
+
+</html>
